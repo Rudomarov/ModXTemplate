@@ -329,7 +329,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    html, body {
+        overflow-x: hidden;     
         font-size: 16px;
     }
 
@@ -365,18 +366,22 @@ footer {
     #logo-container h1 {
         padding-left: 0;
         font-size: 24px;
+        text-align: center;
     }
 
-    .info-card {
-        width: 90%;
-        height: auto;
+    .info-card,
+    #about-card,
+    #about-mod-card,
+    #quality-card {
+        width: 90% !important;
+        height: auto !important;
         padding: 20px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
-    #about-card, #about-mod-card, #quality-card {
-        margin-left: auto;
-        margin-right: auto;
+    .info-card p {
+        line-height: 1.5;
     }
 
     .features-container {
@@ -386,10 +391,11 @@ footer {
     }
 
     .feature-card {
-        width: 90%;
-        height: auto;
+        width: 90% !important;
+        height: auto !important;
         padding: 20px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .feature-header {
@@ -411,6 +417,7 @@ footer {
         height: auto;
         padding: 10px;
         text-align: center;
+        margin: 0 auto;
     }
 
     .buy-modal-window {
@@ -418,6 +425,7 @@ footer {
         left: 5%;
         height: auto;
         padding: 20px;
+        box-sizing: border-box;
     }
 
     #modal-buy-title {
